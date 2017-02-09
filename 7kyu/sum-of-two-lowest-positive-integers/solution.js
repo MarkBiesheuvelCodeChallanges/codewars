@@ -1,17 +1,13 @@
-let sumTwoSmallestNumbers = (numbers) => {
-  var smallest = [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY];
+const sumTwoSmallestNumbers = (numbers) => {
+  let smallest = [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY]
 
   numbers.forEach((number) => {
-
     if (number < smallest[0]) {
-      var tmp = smallest[0];
-      smallest[0] = number;
-      smallest[1] = tmp;
+      smallest = [number, smallest[0]]
     } else if (number < smallest[1]) {
-      smallest[1] = number;
+      smallest = [smallest[0], number]
     }
+  })
 
-  });
-
-  return smallest[0] + smallest[1];
-};
+  return smallest[0] + smallest[1]
+}
