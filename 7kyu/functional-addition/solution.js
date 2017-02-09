@@ -1,5 +1,2 @@
-function add(n) {
-  return function(x){
-    return x + n;
-  };
-}
+/* eslint-disable no-unused-vars */
+const add = n => x => x + n

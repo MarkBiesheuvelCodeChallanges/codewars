@@ -1,3 +1,2 @@
-function disemvowel(str) {
-  return str.replace(/[aeiou]/ig, '');
-}
+/* eslint-disable no-unused-vars */
+const disemvowel = (str) => str.replace(/[aeiou]/ig, '')

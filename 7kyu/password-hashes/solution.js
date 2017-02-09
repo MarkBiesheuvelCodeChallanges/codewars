@@ -1,5 +1,4 @@
-var crypto = require('crypto');
+/* eslint-disable no-unused-vars */
+const crypto = require('crypto')
 
-function passHash(str) {
-  return crypto.createHash('md5').update(str).digest('hex');
-}
+const passHash = string => crypto.createHash('md5').update(string).digest('hex')

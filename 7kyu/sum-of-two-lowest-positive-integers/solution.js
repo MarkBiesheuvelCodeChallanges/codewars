@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const sumTwoSmallestNumbers = (numbers) => {
   let smallest = [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY]
 

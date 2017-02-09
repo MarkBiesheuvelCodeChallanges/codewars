@@ -1,13 +1,12 @@
-var HTMLGen = function () {};
+/* eslint-disable no-unused-vars */
+class HTMLGen {
+  comment (content) {
+    return `<!--${content}-->`
+  }
+}
 
-var tags = ['div', 'b', 'a', 'p', 'body', 'span', 'title', 'comment'];
-
-tags.forEach(function(tag) {
-  HTMLGen.prototype[tag] = function(content) {
-    return '<' + tag + '>' + content + '</' + tag + '>';
-  };
-});
-
-HTMLGen.prototype.comment = function(content) {
-  return '<!--' + content + '-->';
-};
+['div', 'b', 'a', 'p', 'body', 'span', 'title'].forEach((tag) => {
+  HTMLGen.prototype[tag] = (content) => {
+    return `<${tag}>${content}</${tag}>`
+  }
+})
