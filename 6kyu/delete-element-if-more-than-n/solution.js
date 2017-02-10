@@ -1,16 +1,14 @@
-function deleteNth(array, n){
+/* eslint-disable no-unused-vars */
+const deleteNth = (array, n) => {
+  let counter = {}
 
-  var counter = {};
-
-  return array.filter(function(value) {
-
+  return array.filter((value) => {
     if (value in counter) {
-      counter[value]++;
+      counter[value]++
     } else {
-      counter[value] = 1;
+      counter[value] = 1
     }
 
-    return counter[value] <= n;
-  });
-
+    return counter[value] <= n
+  })
 }
