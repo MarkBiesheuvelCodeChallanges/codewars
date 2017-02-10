@@ -10,7 +10,7 @@ const divisors = (integer) => {
   }
 
   if (divisors.length === 0) {
-    return integer + ' is prime'
+    return `${integer} is prime`
   } else {
     return divisors
   }
